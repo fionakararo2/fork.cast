@@ -16,7 +16,7 @@ app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, 'index.html'));
 });
 
-/ Database Connection
+// Database Connection
 const db = mysql.createPool({
   host: process.env.DB_HOST,
   port: process.env.DB_PORT || 3306,
